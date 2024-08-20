@@ -13,6 +13,7 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="" href="">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -21,16 +22,31 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@font-face {
+			font-family: 'Noto Sans';
+			src: url('../assets/fonts/NotoSans-Regular.ttf') format('truetype');
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Noto Sans Italic';
+			src: url('../assets/fonts/NotoSans-Italic.ttf') format('truetype');
+			font-style: italic;
+		}
+		@font-face {
+			font-family: 'Noto Serif';
+			src: url('../assets/fonts/NotoSerif-Regular.ttf') format('truetype');
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Noto Serif Italic';
+			src: url('../assets/fonts/Noto-Serif-Italic.ttf') format('truetype');
+			font-style: italic;
+		}
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		--sans-font: 'Noto Sans', sans-serif;
+		--sans-font-italic: 'Noto Sans Italic', sans-serif;
+		--serif-font: 'Noto Serif', serif;
+		--serif-font-italic: 'Noto Sans Italic', sans-serif;
 	}
 	html {
 		font-family: system-ui, sans-serif;
