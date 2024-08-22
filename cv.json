@@ -1,0 +1,239 @@
+{
+  "basics": {
+    "name": "Gabriel Casado Peña",
+    "label": "Front End Developer con más de 4 años de experiencia",
+    "image": "/me.webp",
+    "email": "gcasado.ddw@gmail.com",
+    "phone": "+34 638887352",
+    "url": "https://spaniard.dev",
+    "summary": "+4 años de experiencia como Desarrollador Web. Actualmente soy Desarrollador Front End en Alten. Vivo en Madrid, España. He trabajado en diferentes entornos: desde trabajar en equipos multiculturales y políglotas hasta formar a equipos juniors en metodologías ágiles aplicadas a la programación y las mejores prácticas de desarrollo web.",
+    "location": {
+      "address": "",
+      "postalCode": "28043",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "country": "España"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "gabriel-casado",
+        "url": "https://www.linkedin.com/in/gabriel-casado/",
+        "icon": "linkedin"
+      },
+      {
+        "network": "GitHub",
+        "username": "SpaniardDev",
+        "url": "https://github.com/SpaniardDev",
+        "icon": "square-github"
+      },
+      {
+        "network": "X",
+        "username": "SpaniardDev",
+        "url": "https://x.com/SpaniardDev",
+        "icon": "square-x-twitter"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Alten",
+      "position": "Lead Frontend Architect",
+      "startDate": "2016-06-01",
+      "endDate": "2022-09-01",
+      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Hubii",
+      "position": "Senior FrontEnd Developer",
+      "startDate": "2011-03-01",
+      "endDate": "2016-05-01",
+      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "highlights": ["Started the company"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Asociación Hermano Oso",
+      "position": "Co-fundador",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Asociación sin ánimo de lucro,dedicada a la ayuda ,protección y apoyo del menor maltratado y/o en peligro de exclusión."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Escuela CES",
+      "url": "https://www.escuelaces.com/",
+      "area": "Técnico superior en desarrollo de aplicaciones multiplataforma, ciberseguridad y big data",
+      "studyType": "Formación Profesional Superior",
+      "startDate": "2003-01-01",
+      "endDate": "2009-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Framework",
+        "SPA",
+        "Micro Frontends",
+        "Standalone"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermedio",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Astro",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "AdventJS",
+      "isActive": true,
+      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "highlights": [
+        "+1 millón de visitas",
+        "Multidioma",
+        "JavaScript & TypeScript"
+      ],
+      "url": "https://adventjs.dev"
+    },
+    {
+      "name": "Codember",
+      "isActive": true,
+      "description": "Juego interactivo de programación con retos y secretos",
+      "highlights": ["+2000 usuarios activos", "Retos para cualquier lenguaje"],
+      "url": "https://codember.dev"
+    },
+    {
+      "name": "codi.link",
+      "isActive": true,
+      "description": "Playground de código HTML, CSS y JavaScript para compartir",
+      "highlights": ["100k visitas al mes", "Desarrollado por la comunidad"],
+      "url": "https://codi.link",
+      "github": "https://github.com/midudev/codi.link"
+    },
+    {
+      "name": "Pruebas Técnicas",
+      "isActive": true,
+      "description": "Lista de pruebas técnicas de empresas para practicar programación",
+      "highlights": ["100% gratuito", "+500 soluciones de la comunidad"],
+      "url": "https://pruebastecnicas.com",
+      "github": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "name": "miduConf",
+      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
+      "highlights": ["+15k tickets repartidos", "+50k espectadores en directo"],
+      "url": "https://miduconf.com"
+    }
+  ]
+}

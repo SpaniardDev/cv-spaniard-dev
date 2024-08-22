@@ -1,0 +1,63 @@
+---
+import Section from "@components/Section.astro";
+import { basics } from "@cv/index";
+
+const { name, label, image, email, phone, url, summary, location, profiles } =
+  basics;
+const { city, country } = location;
+---
+
+<Section>
+  <div>
+    <div id="info">
+      <h1 class="text-2xl font-bold font-sans">{name}</h1>
+      <p class="text-md">{label}</p>
+      <span class="text-sm">
+        <i class="fa-solid fa-location-dot text-slate-800"></i>
+        {city}, {country}
+      </span>
+      <a
+        class="block text-sm text-slate-800 hover:text-blue-500 underline"
+        href="https://spaniard.dev"
+        title={`Visitar la página de ${name}`}
+        target="_blank"
+        rel="noreferrer">Mi web</a
+      >
+    </div>
+    <footer id="links">
+      <ul class="text-2xl text-slate-800 flex flex-row gap-x-2">
+        {
+          email && (
+            <li id="Email" class="">
+              <a
+                href={`mailto:${email}`}
+                title={`Enviar un correo a ${name} al correo ${email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-solid fa-square-envelope" />
+              </a>
+            </li>
+          )
+        }
+        {
+          profiles.map((profile) => (
+            <li id={profile.network} class="">
+              <a
+                href={profile.url}
+                title={`Visitar el perfil de ${name} en ${profile.network}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class={`fa-brands fa-${profile.icon}`} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </footer>
+  </div>
+  <figure>
+    <img src={image} alt={name} width="132" height="132" />
+  </figure>
+</Section>

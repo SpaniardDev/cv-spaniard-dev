@@ -1,7 +1,21 @@
 ---
-import Layout from '@layouts/Layout.astro';
+import Layout from "@layouts/Layout.astro";
+
+import About from "@components/sections/About.astro";
+import Education from "@components/sections/Education.astro";
+import Experience from "@components/sections/Experience.astro";
+import Hero from "@components/sections/Hero.astro";
+import Skills from "@components/sections/Skills.astro";
+import KeyBoardManager from "@components/ui/KeyboardManager.astro";
 ---
 
-<Layout title="Portfolio de Gabriel Casado Peña.">
-	<h1 class="font-serif text-4xl font-bold text-center">Bienvenido a Astro.</h1>
+<Layout title="CV de Gabriel Casado Peña.">
+  <main class="w-full p-16 mx-auto bg-gray-100">
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <Skills />
+    <KeyBoardManager />
+  </main>
 </Layout>
