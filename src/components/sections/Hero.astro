@@ -8,12 +8,12 @@ const { city, country } = location;
 ---
 
 <Section>
-  <div>
-    <div id="info">
-      <h1 class="text-2xl font-bold font-sans">{name}</h1>
-      <p class="text-md">{label}</p>
-      <span class="text-sm">
-        <i class="fa-solid fa-location-dot text-slate-800"></i>
+  <div class="flex flex-row flex-wrap justify-between items-center">
+    <div id="info" class="flex flex-col gap-y-1">
+      <h1 class="text-4xl font-medium font-sans">{name}</h1>
+      <h2 class="text-md text-balance text-gray-800">{label}</h2>
+      <span class="text-sm text-slate-700">
+        <i class="fa-solid fa-location-dot"></i>
         {city}, {country}
       </span>
       <a
@@ -23,41 +23,64 @@ const { city, country } = location;
         target="_blank"
         rel="noreferrer">Mi web</a
       >
+      <footer id="links">
+        <ul class="text-2xl text-slate-800 flex flex-row gap-x-2">
+          {
+            email && (
+              <li
+                id="Email"
+                class="transition ease-in-out delay-60 text-gray-800 hover:-translate-y-1 hover:scale-110 hover:text-slate-700 duration-250"
+              >
+                <a
+                  href={`mailto:${email}`}
+                  title={`Enviar un correo a ${name} al correo ${email}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa-solid fa-square-envelope" />
+                </a>
+              </li>
+            )
+          }
+          {
+            phone && (
+              <li
+                id="Phone"
+                class="transition ease-in-out delay-60 text-gray-800 hover:-translate-y-1 hover:scale-110 hover:text-slate-700 duration-250"
+              >
+                <a
+                  href={`tel:${phone}`}
+                  title={`Llamar a ${name} en el teléfono ${phone}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa-solid fa-square-phone" />
+                </a>
+              </li>
+            )
+          }
+          {
+            profiles.map((profile) => (
+              <li
+                id={profile.network}
+                class="transition ease-in-out delay-60 text-gray-800 hover:-translate-y-1 hover:scale-110 hover:text-slate-700 duration-250"
+              >
+                <a
+                  href={profile.url}
+                  title={`Visitar el perfil de ${name} en ${profile.network}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class={`fa-brands fa-${profile.icon}`} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </footer>
     </div>
-    <footer id="links">
-      <ul class="text-2xl text-slate-800 flex flex-row gap-x-2">
-        {
-          email && (
-            <li id="Email" class="">
-              <a
-                href={`mailto:${email}`}
-                title={`Enviar un correo a ${name} al correo ${email}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fa-solid fa-square-envelope" />
-              </a>
-            </li>
-          )
-        }
-        {
-          profiles.map((profile) => (
-            <li id={profile.network} class="">
-              <a
-                href={profile.url}
-                title={`Visitar el perfil de ${name} en ${profile.network}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class={`fa-brands fa-${profile.icon}`} />
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </footer>
+    <figure>
+      <img class="rounded-lg" src={image} alt={name} width="152" height="152" />
+    </figure>
   </div>
-  <figure>
-    <img src={image} alt={name} width="132" height="132" />
-  </figure>
 </Section>
