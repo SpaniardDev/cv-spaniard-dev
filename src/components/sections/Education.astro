@@ -1,6 +1,36 @@
 ---
-import Section from '@components/Section.astro';
+import Section from "@components/Section.astro";
+
+import { education } from "@cv/index";
 ---
 
-<Section title="Education">
+<Section title="Estudios">
+  <ul>
+    <ul>
+      {
+        education.map((study) => (
+          <li>
+            <article class="my-2">
+              <header class="flex flex-row justify-between">
+                <hgroup>
+                  <div>
+                    <h3 class="text-lg font-bold font-sans inline">
+                      <a href={study.url} target="_blank" rel="noreferrer">
+                        {study.institution}
+                      </a>
+                    </h3>
+                    <span class="text-sm">{study.studyType}</span>
+                  </div>
+                  <p class="text-md text-gray-700">{study.area}</p>
+                </hgroup>
+                <time class="">
+                  {study.startDate} - {study.endDate} &nbsp;
+                </time>
+              </header>
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+  </ul>
 </Section>
