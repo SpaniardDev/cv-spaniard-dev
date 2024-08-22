@@ -38,18 +38,26 @@
   "work": [
     {
       "name": "Alten",
-      "position": "Lead Frontend Architect",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "position": "FrontEnd Developer",
+      "startDate": "2023-03",
+      "endDate": "actualidad",
+      "summary": "Desarrollé una aplicación de gestión de contratos y una API para consumir y manipular la información. Actualmente estoy desarrollando una aplicación de gestión de datos, junto con el modelo de datos de la aplicación y la API.",
       "highlights": ["Started the company"]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "VASS",
+      "position": "FrontEnd Developer",
+      "startDate": "2022-05",
+      "endDate": "2023-03",
+      "summary": "Promuve la adopción de los principios de desarrollo ágil, los principios SOLID y patrones de diseño. Actualicé y desarrollé una plataforma de gestión de recursos y materiales. Colaboré en el desarrollo de una aplicación ofline para la gestión de recursos.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "NTTDATA",
+      "position": "Junior FrontEnd Developer",
+      "startDate": "2020-10",
+      "endDate": "2022-05",
+      "summary": "Desarrollé una plataforma de firma y gestión de contratos y una API para consumir y manipular la información. Generé web components agnosticos para cada una de las múltiples aplicaciones que se desarrollaban en el proyecto. Colaboré en la migración de una arquitectura monolítica a una de micro-fontends.",
       "highlights": ["Started the company"]
     }
   ],
@@ -57,8 +65,8 @@
     {
       "organization": "Asociación Hermano Oso",
       "position": "Co-fundador",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
+      "startDate": "2009",
+      "endDate": "actualidad",
       "summary": "Asociación sin ánimo de lucro,dedicada a la ayuda ,protección y apoyo del menor maltratado y/o en peligro de exclusión."
     }
   ],
@@ -66,10 +74,11 @@
     {
       "institution": "Escuela CES",
       "url": "https://www.escuelaces.com/",
-      "area": "Técnico superior en desarrollo de aplicaciones multiplataforma, ciberseguridad y big data",
+      "area": "Desarrollo de aplicaciones multiplataforma, ciberseguridad y big data",
       "studyType": "Formación Profesional Superior",
-      "startDate": "2003-01-01",
-      "endDate": "2009-01-01"
+      "startDate": "2017-09",
+      "endDate": "2019-06",
+      "summary": "El ciclo formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma te faculta para desarrollar e implantar aplicaciones, sitios web, softwares, etc. con independencia del modelo empleado, utilizando tecnologías específicas que garantizan el acceso a los datos de forma segura, cumpliendo con los criterios de accesibilidad y calidad. "
     }
   ],
   "skills": [

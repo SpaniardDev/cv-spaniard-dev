@@ -1,6 +1,30 @@
 ---
-import Section from '@components/Section.astro';
+import Section from "@components/Section.astro";
+
+import { work } from "@cv/index";
 ---
 
-<Section title="Experience">
+<Section title="Experiencia">
+  <ul>
+    {
+      work.map((job) => (
+        <li>
+          <article class="my-2">
+            <header class="flex flex-row justify-between">
+              <hgroup>
+                <h3 class="text-lg font-bold font-sans">{job.name}</h3>
+                <p class="text-md text-gray-700">{job.position}</p>
+              </hgroup>
+              <time class="">
+                {job.startDate} - {job.endDate} &nbsp;
+              </time>
+            </header>
+            <footer>
+              <p>{job.summary}</p>
+            </footer>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
 </Section>
