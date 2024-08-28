@@ -1,0 +1,30 @@
+---
+import Section from "@components/Section.astro";
+
+import { volunteer } from "@cv/index";
+---
+
+<Section title="Voluntariado" class="print:pt-12">
+  <ul>
+    {
+      volunteer.map((job) => (
+        <li>
+          <article class="my-2">
+            <header class="flex flex-row justify-between">
+              <hgroup>
+                <h3 class="text-lg font-bold font-sans">{job.organization}</h3>
+                <p class="text-md text-accent-900">{job.position}</p>
+              </hgroup>
+              <time>
+                {job.startDate} - {job.endDate} &nbsp;
+              </time>
+            </header>
+            <footer>
+              <p>{job.summary}</p>
+            </footer>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

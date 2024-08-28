@@ -1,0 +1,19 @@
+---
+import Section from "@components/Section.astro";
+
+import { languages } from "@cv/index";
+---
+
+<Section title="Idiomas">
+  <ul class="flex flex-row gap-x-2 flex-wrap">
+    {
+      languages.map((language) => (
+        <li class=" text-sm bg-primary-500 rounded-full py-1 px-2 text-[#ffffff] print:text-black my-2">
+          <span>
+            {language.language}: {language.fluency}
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

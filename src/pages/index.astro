@@ -6,15 +6,25 @@ import Education from "@components/sections/Education.astro";
 import Experience from "@components/sections/Experience.astro";
 import Hero from "@components/sections/Hero.astro";
 import Skills from "@components/sections/Skills.astro";
+import Blob from "@components/blob.astro";
+import Volunteer from "@components/sections/Volunteer.astro";
+import Languages from "@components/sections/Languages.astro";
 ---
 
 <Layout title="CV de Gabriel Casado Peña.">
-  <main class="w-full p-16 mx-auto">
+  <Blob />
+  <main
+    class="bg-[#ffffff] max-w-3xl mx-auto p-4 print:p-0 shadow-lg print:shadow-none"
+  >
     <Hero />
     <About />
     <Experience />
+    <Volunteer />
     <Education />
-    <Skills />
+    <div class="flex flex-row gap-x-4">
+      <Skills />
+      <Languages />
+    </div>
     <!-- <KeyBoardManager /> -->
   </main>
 </Layout>
