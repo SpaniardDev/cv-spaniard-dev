@@ -1,25 +1,43 @@
 ---
-
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro descripción" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<script src="https://kit.fontawesome.com/8ca19da3a1.js" crossorigin="anonymous"></script>
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro descripción" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8ca19da3a1.js"
+      crossorigin="anonymous"></script>
+    <title>{title}</title>
+  </head>
+  <body class="text-black w-full mx-auto p-4">
+    <slot />
+  </body>
 </html>
+
+<style>
+  body {
+    background-color: #f2f2f2;
+    background-image: radial-gradient(#6060bb 0.5px, transparent 0.5px),
+      radial-gradient(#6060bb 0.5px, #f2f2f2 0.5px);
+    background-size: 20px 20px;
+    background-position:
+      0 0,
+      10px 10px;
+  }
+</style>

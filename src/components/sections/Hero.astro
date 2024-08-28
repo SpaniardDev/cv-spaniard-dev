@@ -2,42 +2,60 @@
 import Section from "@components/Section.astro";
 import { basics } from "@cv/index";
 
-const { name, label, image, email, phone, url, summary, location, profiles } =
-  basics;
+const {
+  name,
+  label,
+  image,
+  email,
+  phone,
+  url,
+  link,
+  summary,
+  location,
+  profiles,
+} = basics;
 const { city, country } = location;
 ---
 
 <Section>
   <div class="flex flex-row flex-wrap justify-between items-center">
     <div id="info" class="flex flex-col gap-y-1">
-      <h1 class="text-4xl font-medium font-sans">{name}</h1>
-      <h2 class="text-md text-balance text-gray-800">{label}</h2>
-      <span class="text-sm text-slate-700">
-        <i class="fa-solid fa-location-dot"></i>
+      <h1 class="text-4xl font-bold font-lato text-black">{name}</h1>
+      <h2 class="text-lg font-lato text-black">
+        {label}
+      </h2>
+      <span class="text-md print:text-sm text-black">
+        <i class="fa-solid fa-location-dot text-primary-500 print:hidden"></i>
         {city}, {country}
       </span>
       <a
-        class="block text-sm text-slate-800 hover:text-blue-500 underline"
-        href="https://spaniard.dev"
+        class="w-fit block text-md print:text-sm text-secondary-800 print:text-black hover:text-secondary-500 underline print:no-underline"
+        href={url}
         title={`Visitar la página de ${name}`}
         target="_blank"
-        rel="noreferrer">Mi web</a
+        rel="noreferrer"
       >
+        {link}
+      </a>
       <footer id="links">
-        <ul class="text-2xl text-slate-800 flex flex-row gap-x-2">
+        <ul
+          class="text-3xl print:text-sm text-primary-500 print:text-black flex flex-row print:flex-col gap-x-2 print:gap-y-0"
+        >
           {
             email && (
               <li
                 id="Email"
-                class="transition ease-in-out delay-60 text-gray-800 hover:-translate-y-1 hover:scale-110 hover:text-slate-700 duration-250"
+                class="transition ease-in-out delay-60  hover:-translate-y-1 hover:scale-110 duration-250 hover:text-primary-400"
               >
                 <a
                   href={`mailto:${email}`}
                   title={`Enviar un correo a ${name} al correo ${email}`}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Link con icono de correo electrónico"
                 >
-                  <i class="fa-solid fa-square-envelope" />
+                  <i class="fa-solid fa-square-envelope print:hidden" />
+                  <span class="hidden print:inline-block">{email}</span>
                 </a>
               </li>
             )
@@ -46,15 +64,17 @@ const { city, country } = location;
             phone && (
               <li
                 id="Phone"
-                class="transition ease-in-out delay-60 text-gray-800 hover:-translate-y-1 hover:scale-110 hover:text-slate-700 duration-250"
+                class="transition ease-in-out delay-60  hover:-translate-y-1 hover:scale-110 duration-250 hover:text-primary-400"
               >
                 <a
                   href={`tel:${phone}`}
                   title={`Llamar a ${name} en el teléfono ${phone}`}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Link con icono de teléfono"
                 >
-                  <i class="fa-solid fa-square-phone" />
+                  <i class="fa-solid fa-square-phone print:hidden" />
+                  <span class="hidden print:inline-block">{phone}</span>
                 </a>
               </li>
             )
@@ -63,13 +83,14 @@ const { city, country } = location;
             profiles.map((profile) => (
               <li
                 id={profile.network}
-                class="transition ease-in-out delay-60 text-gray-800 hover:-translate-y-1 hover:scale-110 hover:text-slate-700 duration-250"
+                class="print:hidden transition ease-in-out delay-60 hover:-translate-y-1 hover:scale-110 duration-250 hover:text-primary-400"
               >
                 <a
                   href={profile.url}
                   title={`Visitar el perfil de ${name} en ${profile.network}`}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Link con icono de redes sociales"
                 >
                   <i class={`fa-brands fa-${profile.icon}`} />
                 </a>
