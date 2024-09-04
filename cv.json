@@ -6,7 +6,8 @@
     "email": "gcasado.ddw@gmail.com",
     "phone": "+34 638887352",
     "url": "https://spaniard.dev",
-    "summary": "+4 años de experiencia como Desarrollador Web. Actualmente soy Desarrollador Front End en Alten. Vivo en Madrid, España. He trabajado en diferentes entornos: desde trabajar en equipos multiculturales y políglotas hasta formar a equipos juniors en metodologías ágiles aplicadas a la programación y las mejores prácticas de desarrollo web.",
+    "link": "spaniard.dev",
+    "summary": "+4 años de experiencia como FrontEnd Developer. Vivo en Madrid, España. He trabajado en multitud de entornos diferentes, aplicando siempre los estándares de desarrollo web y aplicando las soluciones más eficientes para cada proyecto, adaptandome a las necesidades de cliente y a los tiempos establecidos. Actualmente soy Desarrollador Fullstacl en Alten. Siempre busco mejorar y crecer en mi trabajo.",
     "location": {
       "address": "",
       "postalCode": "28043",
@@ -39,7 +40,7 @@
     {
       "name": "Alten",
       "position": "FrontEnd Developer",
-      "startDate": "2023-03",
+      "startDate": "2023/03",
       "endDate": "actualidad",
       "summary": "Desarrollé una aplicación de gestión de contratos y una API para consumir y manipular la información. Actualmente estoy desarrollando una aplicación de gestión de datos, junto con el modelo de datos de la aplicación y la API.",
       "highlights": ["Started the company"]
@@ -47,17 +48,25 @@
     {
       "name": "VASS",
       "position": "FrontEnd Developer",
-      "startDate": "2022-05",
-      "endDate": "2023-03",
+      "startDate": "2022/05",
+      "endDate": "2023/03",
       "summary": "Promuve la adopción de los principios de desarrollo ágil, los principios SOLID y patrones de diseño. Actualicé y desarrollé una plataforma de gestión de recursos y materiales. Colaboré en el desarrollo de una aplicación ofline para la gestión de recursos.",
       "highlights": ["Started the company"]
     },
     {
       "name": "NTTDATA",
       "position": "Junior FrontEnd Developer",
-      "startDate": "2020-10",
-      "endDate": "2022-05",
+      "startDate": "2020/10",
+      "endDate": "2022/05",
       "summary": "Desarrollé una plataforma de firma y gestión de contratos y una API para consumir y manipular la información. Generé web components agnosticos para cada una de las múltiples aplicaciones que se desarrollaban en el proyecto. Colaboré en la migración de una arquitectura monolítica a una de micro-fontends.",
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Stiga CX",
+      "position": "Junior FrontEnd Developer & UX Designer",
+      "startDate": "2019/12",
+      "endDate": "2020/05",
+      "summary": "Desarrollé multiples cuestionarios de satisfacción para los consumidores de multiples empresas a la vez que diseñaba los mismos aplicando las mejores prácticas de experiencia de usuario.",
       "highlights": ["Started the company"]
     }
   ],
@@ -67,17 +76,17 @@
       "position": "Co-fundador",
       "startDate": "2009",
       "endDate": "actualidad",
-      "summary": "Asociación sin ánimo de lucro,dedicada a la ayuda ,protección y apoyo del menor maltratado y/o en peligro de exclusión."
+      "summary": "Asociación sin ánimo de lucro, dedicada a la ayuda, protección y apoyo del menor maltratado y/o en peligro de exclusión."
     }
   ],
   "education": [
     {
       "institution": "Escuela CES",
-      "url": "https://www.escuelaces.com/",
+      "url": "https://www.escuelaces.com/titulaciones/tecnico-superior-en-desarrollo-aplicaciones-multiplataforma-ciberseguridad-bigdata/",
       "area": "Desarrollo de aplicaciones multiplataforma, ciberseguridad y big data",
       "studyType": "Formación Profesional Superior",
-      "startDate": "2017-09",
-      "endDate": "2019-06",
+      "startDate": "2017",
+      "endDate": "2019",
       "summary": "El ciclo formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma te faculta para desarrollar e implantar aplicaciones, sitios web, softwares, etc. con independencia del modelo empleado, utilizando tecnologías específicas que garantizan el acceso a los datos de forma segura, cumpliendo con los criterios de accesibilidad y calidad. "
     }
   ],
@@ -85,7 +94,7 @@
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend"]
+      "keywords": ["Desarrollo Web", "Frontend", "Accesibilidad"]
     },
     {
       "name": "CSS",
@@ -96,6 +105,11 @@
       "name": "JavaScript",
       "level": "Master",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
     },
     {
       "name": "Tailwind",
@@ -123,11 +137,16 @@
       "keywords": [
         "Desarrollo Web",
         "Frontend",
-        "JavaScript Framework",
+        "Framework de JavaScript",
         "SPA",
         "Micro Frontends",
         "Standalone"
       ]
+    },
+    {
+      "name": "React",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "Librería de JavaScript", "UI"]
     },
     {
       "name": "Node",
@@ -145,56 +164,45 @@
       ]
     },
     {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
-        "Git"
-      ]
-    },
-    {
       "name": "Next.js",
       "level": "Intermedio",
       "keywords": [
         "Desarrollo Web",
         "Frontend",
-        "React Framework",
+        "Framework de React",
         "SSR",
-        "Static Generation"
+        "Generación estática"
       ]
-    },
-    {
-      "name": "React",
-      "level": "Intermedio",
-      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Astro",
       "level": "Intermedio",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Prisma",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "ORM"]
     }
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Idioma nativo"
     },
     {
-      "language": "English",
-      "fluency": "Advanced"
+      "language": "Inglés",
+      "fluency": "Avanzado"
+    },
+    {
+      "language": "Catalán",
+      "fluency": "Básico"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "name": "Teclados mecánicos",
+      "keywords": ["Handy", "Repair"]
     }
   ],
   "references": [
@@ -205,44 +213,11 @@
   ],
   "projects": [
     {
-      "name": "AdventJS",
+      "name": "-",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-      "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
-      ],
-      "url": "https://adventjs.dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": ["+2000 usuarios activos", "Retos para cualquier lenguaje"],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": ["100k visitas al mes", "Desarrollado por la comunidad"],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": ["100% gratuito", "+500 soluciones de la comunidad"],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": ["+15k tickets repartidos", "+50k espectadores en directo"],
-      "url": "https://miduconf.com"
+      "description": "-",
+      "highlights": ["-"],
+      "url": "-"
     }
   ]
 }
