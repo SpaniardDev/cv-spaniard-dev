@@ -2,8 +2,16 @@
 
 ---
 
-<footer></footer>
-<ninja-keys class="print:hidden"> </ninja-keys>
+<footer
+  class="sticky bottom-0 right-5 w-fit z-50 text-black text-center p-4 print:hidden"
+>
+</footer>
+<ninja-keys
+  placeholder="Prueba las acciones..."
+  hideBreadcrumbs
+  class="print:hidden"
+>
+</ninja-keys>
 
 <script>
   import "ninja-keys";
@@ -12,45 +20,35 @@
     ninja.data = [
       {
         id: "Print",
-        title: "Imprimir CV",
+        title: "🖨️ Imprimir CV",
         hotkey: "ctrl+P",
-        icon: "🖨️ ",
         section: "Projects",
         handler: () => {
           window.print();
         },
       },
       {
-        id: "Theme",
-        title: "Change theme...",
-        icon: "desktop_windows",
-        children: ["Light Theme", "Dark Theme", "System Theme"],
-        hotkey: "ctrl+T",
+        id: "Mailto",
+        title: "📧 Contáctame",
+        hotkey: "ctrl+M",
         handler: () => {
-          // open menu if closed. Because you can open directly that menu from it's hotkey
-          ninja.open({ parent: "Theme" });
-          // if menu opened that prevent it from closing on select that action, no need if you don't have child actions
-          return { keepOpen: true };
+          window.location.href = "mailto:gcasado.ddw@gmail.com";
         },
       },
       {
-        id: "Light Theme",
-        title: "Change theme to Light",
-        icon: "light_mode",
-        parent: "Theme",
+        id: "Github",
+        title: "🏗️ Github",
+        hotkey: "ctrl+G",
         handler: () => {
-          // simple handler
-          document.documentElement.classList.remove("dark");
+          window.location.href = "https://github.com/SpaniardDev";
         },
       },
       {
-        id: "Dark Theme",
-        title: "Change theme to Dark",
-        icon: "dark_mode",
-        parent: "Theme",
+        id: "Web ",
+        title: "👀 Visita mi web",
+        hotkey: "ctrl+alt+W",
         handler: () => {
-          // simple handler
-          document.documentElement.classList.add("dark");
+          window.location.href = "https://spaniard.dev";
         },
       },
     ];

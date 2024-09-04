@@ -7,7 +7,7 @@
     "phone": "+34 638887352",
     "url": "https://spaniard.dev",
     "link": "spaniard.dev",
-    "summary": "+4 años de experiencia como FrontEnd Developer. Vivo en Madrid, España. He trabajado en multitud de entornos diferentes, aplicando siempre los estándares de desarrollo web y aplicando las soluciones más eficientes para cada proyecto, adaptandome a las necesidades de cliente y a los tiempos establecidos. Actualmente soy Desarrollador Fullstacl en Alten. Siempre busco mejorar y crecer en mi trabajo.",
+    "summary": "+4 años de experiencia como FrontEnd Developer. Vivo en Madrid, España. He trabajado en multitud de entornos diferentes, aplicando siempre los estándares de desarrollo web y aplicando las soluciones más eficientes para cada proyecto, adaptandome a las necesidades de cliente y a los tiempos establecidos. Actualmente soy Desarrollador Fullstack en Alten. Siempre busco mejorar y crecer en mi trabajo.",
     "location": {
       "address": "",
       "postalCode": "28043",
@@ -193,10 +193,6 @@
     {
       "language": "Inglés",
       "fluency": "Avanzado"
-    },
-    {
-      "language": "Catalán",
-      "fluency": "Básico"
     }
   ],
   "interests": [
