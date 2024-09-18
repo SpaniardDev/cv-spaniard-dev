@@ -38,11 +38,19 @@
   },
   "work": [
     {
+      "name": "Aszendit",
+      "position": "FrontEnd Developer",
+      "startDate": "2024/09",
+      "endDate": "actualmente",
+      "summary": "Actualmente formo parte de un equipo orientado al desarrollo de aplicaciones orientadas a las finanzas.",
+      "highlights": ["Started the company"]
+    },
+    {
       "name": "Alten",
       "position": "FrontEnd Developer",
       "startDate": "2023/03",
-      "endDate": "actualidad",
-      "summary": "Desarrollé una aplicación de gestión de contratos y una API para consumir y manipular la información. Actualmente estoy desarrollando una aplicación de gestión de datos, junto con el modelo de datos de la aplicación y la API.",
+      "endDate": "2024/09",
+      "summary": "Desarrollé una aplicación de gestión de contratos y una API para consumir y manipular la información. Inicié un proyecto en Next.js y React, PRISMA ORM y PostgreSQL.",
       "highlights": ["Started the company"]
     },
     {
